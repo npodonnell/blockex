@@ -1,3 +1,4 @@
 /node_modules
 /webroot/static/bundle.js
+/scratch*.js
 
