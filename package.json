@@ -6,7 +6,7 @@
   "scripts": {
     "build": "NODE_ENV=development webpack --watch --mode development --config webpack.config.js",
     "serve": "nodemon server.js",
-    "develop": "npm run serve & npm run build"
+    "start": "npm run serve & npm run build"
   },
   "author": "",
   "license": "ISC",
