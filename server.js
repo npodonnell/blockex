@@ -13,6 +13,14 @@ process.chdir(ROOTDIR)
 
 const indexFilename = path.join(process.cwd(), INDEXFILE)
 
+// API requests live under /api
+server.get(/^\/api\//, (req, res) => {
+    const [key, value] = parseUrl(req).pathname.split('/').slice(2)
+    console.log(`Serving ${key} ${value}`)
+    
+})
+
+
 // static files live under /static
 server.get(/^\/static\//, (req, res) => {
 	const filename = path.join(process.cwd(), parseUrl(req).pathname)
