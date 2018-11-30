@@ -2,7 +2,7 @@ import React from 'react'
 import {BrowserRouter as Router, Route, Switch} from 'react-router-dom'
 import Header from './Header'
 import Footer from './Footer'
-import HomePage from './pages/HomePage'
+import HomeView from './views/HomeView'
 import Entity from './Entity'
 
 class App extends React.Component {
@@ -13,7 +13,7 @@ class App extends React.Component {
                 <div className='main'>
                     <Router>
                         <Switch>
-                        <Route exact path='/' component={HomePage}/>
+                        <Route exact path='/' component={HomeView}/>
                         <Route component={Entity}/>
                         </Switch>
                     </Router>

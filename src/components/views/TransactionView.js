@@ -1,6 +1,6 @@
 import React from 'react'
 
-class TransactionPage extends React.Component {
+class TransactionView extends React.Component {
     render() {
         return (
             <div>
@@ -10,4 +10,4 @@ class TransactionPage extends React.Component {
     }
 }
 
-export default TransactionPage
+export default TransactionView

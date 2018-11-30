@@ -1,6 +1,6 @@
 import React from 'react'
 
-class AddressPage extends React.Component {
+class AddressView extends React.Component {
     render() {
         return (
             <div>
@@ -10,4 +10,4 @@ class AddressPage extends React.Component {
     }
 }
 
-export default AddressPage
+export default AddressView

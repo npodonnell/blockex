@@ -1,6 +1,6 @@
 import React from 'react'
 
-class BlockPage extends React.Component {
+class BlockView extends React.Component {
     render() {
         return (
             <div>
@@ -10,4 +10,4 @@ class BlockPage extends React.Component {
     }
 }
 
-export default BlockPage
+export default BlockView

@@ -4,7 +4,7 @@ import createBrowserHistory from 'history/createBrowserHistory'
 import {routerMiddleware} from 'react-router-redux'
 import React from 'react'
 import ReactDOM from 'react-dom'
-import App from './App'
+import App from './components/App'
 
 import rootReducer from './reducers'
 import rootSaga from './sagas'
