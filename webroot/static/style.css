@@ -13,25 +13,12 @@ body {
 .app {
     height: 100vh;
     width: 100vw;
-    background-color: yellow;
+    background-color: yellow; /* we should see no yellow */
     display: grid;
     grid-template-rows: var(--header-height) auto var(--footer-height);
-    grid-template-columns: var(--nav-width) auto;
 }
 
-.nav {
-    grid-column-start: 1;
-    grid-column-end: 2;
-    background-color: orange;
-}
-
-.main {
-    grid-column-start: 2;
-    grid-column-end: -1;
-    grid-row-start: 2;
-    grid-row-end: 3;
-    background-color: purple;
-}
+/* children of `app` */
 
 .header {
     grid-column-start: 1;
@@ -41,10 +28,40 @@ body {
     background-color: red;
 }
 
+.main {
+    grid-column-start: 1;
+    grid-column-end: -1;
+    grid-row-start: 2;
+    grid-row-end: -1;
+    background-color: purple;
+}
+
 .footer {
     grid-column-start: 1;
     grid-column-end: -1;
     grid-row-start: -2;
     grid-row-end: -1;
     background-color: blue;
+}
+
+/* entity */
+
+.entity {
+    height: 100%;
+    display: grid;
+    grid-template-columns: var(--nav-width) auto;
+}
+
+/* children of `entity` */
+
+.nav {
+    grid-column-start: 1;
+    grid-column-end: 2;
+    background-color: orange;
+}
+
+.content {
+    grid-column-start: 2;
+    grid-column-end: 3;
+    background-color: burlywood;
 }
