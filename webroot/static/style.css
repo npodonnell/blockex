@@ -1,19 +1,50 @@
+:root {
+    --global-border: 1px solid lightgrey;
+    --header-height: 30px;
+    --footer-height: 30px;
+    --nav-width: 400px;
+}
+
 body {
     margin: 0;
+    overflow: hidden;
 }
 
 .app {
-    
+    height: 100vh;
+    width: 100vw;
+    background-color: yellow;
+    display: grid;
+    grid-template-rows: var(--header-height) auto var(--footer-height);
+    grid-template-columns: var(--nav-width) auto;
 }
 
 .nav {
+    grid-column-start: 1;
+    grid-column-end: 2;
+    background-color: orange;
+}
 
+.main {
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 2;
+    grid-row-end: 3;
+    background-color: purple;
 }
 
 .header {
-
+    grid-column-start: 1;
+    grid-column-end: -1;
+    grid-row-start: 1;
+    grid-row-end: 2;
+    background-color: red;
 }
 
 .footer {
-
+    grid-column-start: 1;
+    grid-column-end: -1;
+    grid-row-start: -2;
+    grid-row-end: -1;
+    background-color: blue;
 }
