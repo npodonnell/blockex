@@ -1,20 +1,17 @@
 import React from 'react'
 import {Route} from 'react-router-dom'
 import Nav from './Nav'
-
-import BlockView from './views/BlockView'
-import AddressView from './views/AddressView'
-import TransactionView from './views/TransactionView'
+import routes from '../routes'
 
 class Entity extends React.Component {
     render() {
         return (
-            <div class='entity'>
+            <div className='entity'>
                 <Nav/>
                 <div className='content'>
-                    <Route path='/block/:id' component={BlockView}/>
-                    <Route path='/address/:id' component={AddressView}/>
-                    <Route path='/transaction/:id' component={TransactionView}/>
+                    <Route exact {...routes.blockView}/>
+                    <Route exact {...routes.addressView}/>
+                    <Route exact {...routes.transactionView}/>
                 </div>
             </div>
         )

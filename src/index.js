@@ -26,4 +26,4 @@ const store = createStore(
 
 sagaMiddleware.run(rootSaga)
 
-ReactDOM.render(<App store={store}/>, rootDiv)
+ReactDOM.render(<App store={store} history={history}/>, rootDiv)
