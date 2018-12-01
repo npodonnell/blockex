@@ -13,6 +13,30 @@ class HomeView extends React.Component {
                 <br/>
                 Some transaction: <NavLink to='/transaction/xyz'>Click</NavLink>
                 <br/>
+                Lorem ipsum
+                <br/>
+                Lorem ipsum
+                <br/>
+                Lorem ipsum
+                <br/>
+                Lorem ipsum
+                <br/>
+                Lorem ipsum
+                <br/>
+                Lorem ipsum
+                <br/>
+                Lorem ipsum
+                <br/>
+                Lorem ipsum
+                <br/>
+                Lorem ipsum
+                <br/>
+                Lorem ipsum
+                <br/>
+                Lorem ipsum
+                <br/>
+                Lorem ipsum
+                <br/>
             </div>
         )
     }

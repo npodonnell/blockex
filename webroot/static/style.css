@@ -34,6 +34,8 @@ body {
     grid-row-start: 2;
     grid-row-end: -1;
     background-color: purple;
+    height: calc(100vh - var(--header-height) - var(--footer-height));
+    overflow-y: auto;
 }
 
 .footer {
@@ -64,4 +66,5 @@ body {
     grid-column-start: 2;
     grid-column-end: 3;
     background-color: burlywood;
+    overflow-y: auto;
 }

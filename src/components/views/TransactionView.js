@@ -5,6 +5,85 @@ class TransactionView extends React.Component {
         return (
             <div>
                 Transaction goes here
+                <br/>
+                Transaction goes here
+                <br/>
+                Transaction goes here
+                <br/>
+                Transaction goes here
+                <br/>
+                Transaction goes here
+                <br/>
+                Transaction goes here
+                <br/>
+                Transaction goes here
+                <br/>
+                Transaction goes here
+                <br/>
+                Transaction goes here
+                <br/>
+                Transaction goes here
+                <br/>
+                Transaction goes here
+                <br/>
+                Transaction goes here
+                <br/>
+                Transaction goes here
+                <br/>
+                Transaction goes here
+                <br/>
+                Transaction goes here
+                <br/>
+                Transaction goes here
+                <br/>
+                Transaction goes here
+                <br/>
+                Transaction goes here
+                <br/>
+                Transaction goes here
+                <br/>
+                Transaction goes here
+                <br/>
+                Transaction goes here
+                <br/>
+                Transaction goes here
+                <br/>
+                Transaction goes here
+                <br/>
+                Transaction goes here
+                <br/>
+                Transaction goes here
+                <br/>
+                Transaction goes here
+                <br/>
+                Transaction goes here
+                <br/>
+                Transaction goes here
+                <br/>
+                Transaction goes here
+                <br/>
+                Transaction goes here
+                <br/>
+                Transaction goes here
+                <br/>
+                Transaction goes here
+                <br/>
+                Transaction goes here
+                <br/>
+                Transaction goes here
+                <br/>
+                Transaction goes here
+                <br/>
+                Transaction goes here
+                <br/>
+                Transaction goes here
+                <br/>
+                Transaction goes here
+                <br/>
+                Transaction goes here
+                <br/>
+                Transaction goes here
+                <br/>
             </div>
         )
     }
