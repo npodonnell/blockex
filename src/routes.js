@@ -11,8 +11,9 @@ import transactionViewSaga from './sagas/views/transactionViewSaga'
 /**
  * Here is where we tie together view components (HomeView, BlockView, etc...) and their
  * corresponding sagas (homeViewSaga, blockViewSaga, etc...). When a LOCATION_CHANGE event
- * happens react-router will update the DOM to show the new view and the corresponding
- * saga will be run.
+ * happens react-router will update the DOM to show the new view and at the same instant
+ * locationSaga will be run and the same route will be matched using the same matching logic
+ * as react-router and the corresponding saga will be run.
  */
 
 const routes = {
