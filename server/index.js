@@ -7,6 +7,8 @@ const express = require('express')
 const send = require('send')
 const parseUrl = require('parseurl')
 
+const api = require('./api')
+
 const server = express()
 
 process.chdir(ROOTDIR)
@@ -15,11 +17,10 @@ const indexFilename = path.join(process.cwd(), INDEXFILE)
 
 // API requests live under /api
 server.get(/^\/api\//, (req, res) => {
-    const [key, value] = parseUrl(req).pathname.split('/').slice(2)
-    console.log(`Serving ${key} ${value}`)
-    
+    const [entityType, entityValue] = parseUrl(req).pathname.split('/').slice(2)
+    console.log(`Serving ${entityType} ${entityValue}`)
+	res.send(api.get(entityType, entityValue))
 })
-
 
 // static files live under /static
 server.get(/^\/static\//, (req, res) => {

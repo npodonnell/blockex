@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "build": "NODE_ENV=development webpack --watch --mode development --config webpack.config.js",
-    "serve": "nodemon server.js",
+    "serve": "nodemon server",
     "start": "npm run serve & npm run build"
   },
   "author": "",
